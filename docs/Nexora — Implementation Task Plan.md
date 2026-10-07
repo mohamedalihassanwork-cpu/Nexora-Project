@@ -13,6 +13,8 @@
 
 ### NEX-001 — Project Scaffold & Developer Tooling
 
+**STATUS: DONE**
+
 **Target:** A fully configured monorepo with working local development environment, enforced code quality, and a runnable CI pipeline skeleton — before any domain code is written.
 
 **Description:**
@@ -46,6 +48,7 @@ Initialize the Next.js App Router project with TypeScript strict mode, configure
 
 ### NEX-002 — Database Schema Bootstrap & Security Hardening
 
+**STATUS: DONE**
 **Target:** A live PostgreSQL database on Supabase with all tables, constraints, indexes, roles, and immutability triggers created in a single baseline migration — with the public schema locked down before any data enters.
 
 **Description:**

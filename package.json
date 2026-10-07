@@ -10,7 +10,10 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "dotenv": "^18.0.5",
+    "drizzle-orm": "^0.45.3",
     "next": "16.3.8",
+    "postgres": "^3.4.9",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
@@ -21,9 +24,11 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "dependency-cruiser": "^18.5.0",
+    "drizzle-kit": "^0.31.11",
     "knip": "^6.39.0",
     "lefthook": "^2.1.17",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   },
   "packageManager": "pnpm@12.9.1",
