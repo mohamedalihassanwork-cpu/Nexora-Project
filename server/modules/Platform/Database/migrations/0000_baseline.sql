@@ -1,5 +1,7 @@
 -- NEX-002: Baseline schema migration
 
+-- Ensure pgcrypto is available for gen_random_bytes in UUIDv7 function
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
 -- Create schema and secure public
 CREATE SCHEMA IF NOT EXISTS nexora;
 REVOKE CREATE ON SCHEMA public FROM PUBLIC;

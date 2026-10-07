@@ -80,6 +80,8 @@ Create the `nexora` custom schema. Revoke all privileges on `public` from `anon`
 
 **Source References:** Architecture §3 (all subsections); Tech Stack §D3, §D4; GAP-01 (no unique constraint); GAP-04 (no waiting_for_account_owner flag).
 
+> **Environment Limitation Note:** Mechanical runtime verification for `UPDATE/DELETE` rejection, Supabase REST API restriction, UUIDv7 structure, negative stock check, signed ledger amount check, `pg_dump`/restore, and idempotency are marked **UNVERIFIED** due to the absence of a running PostgreSQL/Docker environment on the execution host. The implementation has been statically verified, and the automated verification scripts (`verify.ts` and `test-db-restore.ps1`/`test-db-restore.sh`) are fully prepared.
+
 ---
 
 ### NEX-003 — Object Storage Setup
