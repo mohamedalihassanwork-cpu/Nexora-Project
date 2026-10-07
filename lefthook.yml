@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    check:
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+      run: pnpm biome check --write {staged_files}
+    typecheck:
+      glob: "*.{ts,tsx}"
+      run: pnpm tsc --noEmit
